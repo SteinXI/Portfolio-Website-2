@@ -1,0 +1,86 @@
+/* PORTFOLIO WEBSITE 2 — EDITORIAL ACADEMIC DESIGN
+   Inspired by scholarly journals, university publications and Swiss editorial systems.
+   Non-destructive layer: original style.css and all content remain intact. */
+:root {
+  --white: #F7F5F0;
+  --black: #202923;
+  --grey: #59645E;
+  --red: #8C3B3D;
+  --navy: #314C47;
+  --cyan: #799391;
+  --green: #466958;
+  --gold: #BCA66C;
+  --gold-dark: #79643A;
+  --light-border: #D9D9D0;
+}
+html {scroll-padding-top: 28px}
+body {background:#F7F5F0;color:#202923;letter-spacing:.005em}
+body:not(.experience-standalone) .Intro {
+  background:#F1EFE8;
+  border-bottom:1px solid #C7C9C0;
+  position:relative;
+}
+body:not(.experience-standalone) .Intro::before {
+  content:"";position:absolute;top:0;left:0;right:0;height:6px;
+  background:#314C47;
+}
+.Intro-box {background:transparent;max-width:1460px;margin-inline:auto;justify-content:center;gap:clamp(22px,3.5vh,38px)}
+.Intro-label {font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:#8C3B3D}
+.Intro h1 {font-size:clamp(3.6rem,8.3vw,8rem);letter-spacing:-.05em;line-height:1.04;max-width:1150px}
+.Intro-description {font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.85;max-width:760px;color:#46554D}
+.Intro-interests {gap:10px 20px}
+.Intro-interests span {font-size:.89rem;font-weight:500;letter-spacing:.01em;border-bottom-width:2px;padding-bottom:5px}
+.Intro-buttons a {border-radius:2px;min-height:48px;transition:background .2s,color .2s,border-color .2s}
+.Intro-button-primary {background:#314C47!important;border-color:#314C47!important}
+.Intro-button-secondary {border-color:#819189!important}
+body:not(.experience-standalone) .page-content {background:#F7F5F0}
+body:not(.experience-standalone) .content-section {scroll-margin-top:28px}
+body:not(.experience-standalone) .content-section h2 {
+  font-family:"Bodoni Moda",Georgia,serif;
+  font-weight:500;
+  letter-spacing:-.035em;
+  line-height:1.2;
+}
+body:not(.experience-standalone) .about-section,
+body:not(.experience-standalone) .experience-section,
+body:not(.experience-standalone) .languages-section,
+body:not(.experience-standalone) .hobbies-section {background:#F7F5F0;color:#202923}
+body:not(.experience-standalone) .focus-section,
+body:not(.experience-standalone) .education-section,
+body:not(.experience-standalone) .credentials-section {background:#EDEFE9;color:#202923}
+body:not(.experience-standalone) .about-section::after,
+body:not(.experience-standalone) .focus-section::after,
+body:not(.experience-standalone) .experience-section::after,
+body:not(.experience-standalone) .education-section::after,
+body:not(.experience-standalone) .languages-section::after,
+body:not(.experience-standalone) .credentials-section::after,
+body:not(.experience-standalone) .hobbies-section::after {height:1px;background:#C7C9C0}
+body:not(.experience-standalone) .floating-nav {
+  background:#F7F5F0;border:1px solid #C7C9C0;
+  box-shadow:0 8px 32px rgba(20,35,26,.08);
+}
+body:not(.experience-standalone) .floating-nav a.active {background:#314C47;color:#fff}
+body:not(.experience-standalone) .floating-nav a:hover {background:#8C3B3D;color:#fff}
+body:not(.experience-standalone) .contact-section {background:#253C36;color:#F7F5F0}
+body:not(.experience-standalone) > .site-footer {background:#253C36;color:#F7F5F0;border-top:1px solid #61726A}
+body:not(.experience-standalone) a:focus-visible,
+body:not(.experience-standalone) button:focus-visible {outline:3px solid #8C3B3D;outline-offset:4px}
+/* Detailed employment page uses the same material palette and typographic system. */
+.experience-standalone,
+.experience-standalone .experience-detail-page {background:#F7F5F0;color:#202923}
+.experience-standalone .experience-page-header h1,
+.experience-standalone .experience-skills-section h2,
+.experience-standalone .experience-languages-section h2,
+.experience-standalone .experience-contact-section h2 {font-family:"Bodoni Moda",Georgia,serif;letter-spacing:-.035em}
+.experience-standalone .experience-contact-links a:first-child {background:#314C47;border-color:#314C47;color:#fff}
+.experience-standalone .experience-contact-links a {border-color:#314C47;color:#314C47}
+.experience-standalone .site-footer.experience-detail-footer {background:#F7F5F0;border-color:#314C47}
+@media(max-width:768px){
+  .Intro-box {padding:90px 25px 65px;gap:24px}
+  .Intro h1 {font-size:clamp(3.2rem,12vw,5.3rem)}
+  .Intro-interests {gap:8px 14px}
+  .Intro-interests span {font-size:.84rem}
+  .Intro-description {font-size:1rem;line-height:1.75}
+  body:not(.experience-standalone) .floating-nav {background:#F7F5F0}
+}
+@media(prefers-reduced-motion:reduce){.Intro-buttons a{transition:none}}
