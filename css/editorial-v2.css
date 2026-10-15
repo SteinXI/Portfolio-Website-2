@@ -125,3 +125,30 @@ body:not(.experience-standalone) .language-stars .star-empty{color:#6A7078!impor
 body:not(.experience-standalone) .focus-item h3,
 body:not(.experience-standalone) .focus-item p{color:#20242B!important}
 body:not(.experience-standalone) .focus-item p{color:#4E5660!important}
+
+
+/* WHITE-BACKGROUND CONTRAST AUDIT — October 2026 */
+body:not(.experience-standalone) .focus-section,
+body:not(.experience-standalone) .languages-section,
+body:not(.experience-standalone) .contact-section{color:#181B20!important}
+body:not(.experience-standalone) .focus-section .focus-introduction,
+body:not(.experience-standalone) .languages-section .languages-introduction,
+body:not(.experience-standalone) .contact-section .contact-intro{color:#303A45!important}
+body:not(.experience-standalone) .focus-section h2,
+body:not(.experience-standalone) .languages-section h2,
+body:not(.experience-standalone) .contact-section h2{color:#181B20!important}
+body:not(.experience-standalone) .contact-primary,
+body:not(.experience-standalone) .contact-method{background:#fff!important;color:#181B20!important}
+body:not(.experience-standalone) .contact-primary-address,
+body:not(.experience-standalone) .contact-method-value{color:#181B20!important}
+body:not(.experience-standalone) .contact-primary .contact-method-label{color:#4B5360!important}
+body:not(.experience-standalone) .contact-primary .contact-link-arrow{color:var(--red)!important}
+body:not(.experience-standalone) > .site-footer,
+body:not(.experience-standalone) > .site-footer .footer-inner{background:#fff!important;color:#181B20!important}
+body:not(.experience-standalone) > .site-footer .footer-name{color:#181B20!important}
+body:not(.experience-standalone) > .site-footer .footer-copyright{color:#4B5360!important}
+body:not(.experience-standalone) > .site-footer .footer-back-top{color:var(--navy)!important}
+body:not(.experience-standalone) > .site-footer .footer-back-top:hover{color:var(--red)!important}
+body:not(.experience-standalone) .contact-title-accent{color:var(--red)!important}
+body:not(.experience-standalone) .focus-item p{color:#414A55!important}
+body:not(.experience-standalone) .language-cell .language-level{color:#414A55!important}
