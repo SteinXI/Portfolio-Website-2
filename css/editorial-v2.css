@@ -102,3 +102,26 @@ body:not(.experience-standalone) > .site-footer a{color:var(--navy)}
  body:not(.experience-standalone) .language-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(prefers-reduced-motion:reduce){body:not(.experience-standalone) .focus-item{transition:none!important}}
+
+
+/* ACCESSIBILITY PATCH — dark-mode remnants on white backgrounds */
+body:not(.experience-standalone) .focus-introduction,
+body:not(.experience-standalone) .languages-introduction,
+body:not(.experience-standalone) .contact-intro{color:#424953!important}
+body:not(.experience-standalone) .focus-section h2,
+body:not(.experience-standalone) .languages-section h2,
+body:not(.experience-standalone) .contact-section h2{color:#181B20!important}
+body:not(.experience-standalone) .contact-title-accent{color:var(--red)!important}
+body:not(.experience-standalone) .contact-primary-address,
+body:not(.experience-standalone) .contact-method-value{color:#181B20!important}
+body:not(.experience-standalone) .contact-primary .contact-method-label{color:#5B626B!important}
+body:not(.experience-standalone) .contact-method-label{color:#006D82!important}
+body:not(.experience-standalone) .contact-primary,
+body:not(.experience-standalone) .contact-method{color:#181B20!important;border-color:#D5D8DB!important}
+body:not(.experience-standalone) .contact-primary:hover .contact-primary-address,
+body:not(.experience-standalone) .contact-method:hover .contact-method-value{color:var(--navy)!important}
+body:not(.experience-standalone) .language-stars .star-filled{color:#AC8200!important}
+body:not(.experience-standalone) .language-stars .star-empty{color:#6A7078!important}
+body:not(.experience-standalone) .focus-item h3,
+body:not(.experience-standalone) .focus-item p{color:#20242B!important}
+body:not(.experience-standalone) .focus-item p{color:#4E5660!important}
